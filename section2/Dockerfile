@@ -26,7 +26,7 @@
 # 이미지를 실행하는 게 아닌 이미지를 기반으로 컨테이너를 실행
 
 #   도커파일 최적화 npm install 위치 변경
-FROM node
+FROM node:14
 WORKDIR /app
 COPY package.json /app
 RUN npm install
